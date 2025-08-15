@@ -3,7 +3,7 @@ class Solution {
         int low=0;
         int high=nums.length -1;
         int c=0;
-        if(nums.length==1)
+        if(nums.length==1) //edge case when array has only 1 element
         {
             if(nums[0]==val)
             {
@@ -15,7 +15,8 @@ class Solution {
                 return 1;
             }
         }
-        while(low<=high)
+
+        while(low<=high) //general case
         {
             if (nums[high]==val)
             {
